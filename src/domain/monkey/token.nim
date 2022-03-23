@@ -1,3 +1,5 @@
+import tables
+
 type
   Token* = object
     tokenType*: TokenType
@@ -42,3 +44,16 @@ type
 
     LBRACKET  = "["
     RBRACKET  = "]"
+
+
+const keywords = {
+  "fn": TokenType.FUNCTION,
+  "let": TokenType.LET,
+}.toTable;
+
+func lookupIndent*(ident: string): TokenType =
+    if keywords.hasKey(ident): 
+      keywords[ident]
+    else:
+      TokenType.IDENT
+    
