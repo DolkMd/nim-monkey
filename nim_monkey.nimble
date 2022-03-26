@@ -5,7 +5,7 @@ author        = "yumetani"
 description   = "A new awesome nimble package"
 license       = "MIT"
 srcDir        = "src"
-bin           = @["nim_monkey"]
+bin           = @["main"]
 
 
 # Dependencies
