@@ -1,1 +1,3 @@
 test_lexer
+main
+tests/test_parser
