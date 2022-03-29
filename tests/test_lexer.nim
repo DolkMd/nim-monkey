@@ -1,6 +1,5 @@
 import unittest
 import std/tables
-from strformat import fmt
 
 from domain/monkey/lexer import newLexer
 from domain/monkey/token import TokenType
@@ -125,5 +124,6 @@ suite "lexer.nim":
         let lexer = newLexer(text)
         for want in tests:
             let tk = lexer.nextToken()
-            assert want[0] == tk.typ, fmt"{want[0]} == {ord(tk.typ)}"
-            assert want[1] == tk.literal, fmt"{want[1]} == {tk.literal}"
+            check: 
+                want[0] == tk.typ
+                want[1] == tk.literal

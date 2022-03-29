@@ -46,6 +46,7 @@ type
     RBRACKET  = "]"
 
 
+
 const keywords = {
   "fn": TokenType.FUNCTION,
   "let": TokenType.LET,
