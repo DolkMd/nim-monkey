@@ -1,8 +1,9 @@
 # nim-monkey
 
+
 [Go言語でつくるインタプリタ](https://www.oreilly.co.jp/books/9784873118222/)をNimで写経
 
-- [ ] １章
+- [x] １章
 - [ ] ２章
 - [ ] ３章
 - [ ] ４章
